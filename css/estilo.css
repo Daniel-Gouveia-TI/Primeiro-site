@@ -1,0 +1,193 @@
+
+* {
+  margin: 0; /* remove margens padrão dos navegadores */
+  padding: 0; /* remove espaçamentos internos padrão */
+  border: 0; /* remove bordas padrão */
+  box-sizing: border-box; /* inclui padding e bordas no cálculo de width/height */
+}
+
+html {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* fonte base */
+  font-size: 1.2em; /* tamanho padrão do texto */
+  scroll-behavior: smooth; /* rolagem suave para links internos */
+}
+body {
+  border-radius: 10px; /* arredonda as bordas do corpo da página */
+  background-image: url("img/fundo.webp"); /* imagem de fundo */
+  background-size: cover; /* cobre toda a tela */
+  background-position: center; /* centraliza a imagem */
+  background-attachment: fixed; /* fundo fixo ao rolar */
+  background-repeat: no-repeat; /* impede repetição da imagem */
+  color: #000; /* cor padrão do texto */
+  background-color: #292828;
+}
+header {
+  text-align: center; /* centraliza texto */
+  color: #fff; /* texto branco */
+  background-color: rgb(0, 0, 0); /* fundo cinza escuro */
+  padding: 20px; /* espaçamento interno */
+}
+
+nav {
+  text-align: center; /* centraliza os links */
+  padding: 10px; /* espaço interno */
+  font-size: 1.3em; /* aumenta fonte dos links */
+  word-spacing: 10px; /* espaço entre links */
+}
+nav a {
+  color: white; /* cor dos links */
+  text-decoration: none; /* remove sublinhado */
+  margin: 0 10px; /* espaço lateral entre links */
+}
+nav a:hover {
+  color: rgb(231, 23, 23); /* muda a cor ao passar o mouse */
+}
+section {
+  background-color: rgba(250, 250, 250, 0.85); /* fundo branco semi-transparente */
+  border-radius: 10px; /* bordas arredondadas */
+  text-align: justify; /* justifica o texto */
+  padding: 30px; /* espaço interno */
+  font-size: 16px; /* tamanho da fonte */
+  display: flex; /* ativa flexbox */
+  flex-direction: column; /* organiza em coluna */
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center; /* centraliza verticalmente */
+  gap: 15px; /* espaçamento entre elementos */
+  width: 90%; /* limite de largura */
+  margin: 30px auto; /* centraliza e separa das bordas */
+}
+section img {
+  width: 500px; /* largura controlada */
+  height: auto; /* mantém proporção */
+  border-radius: 10px; /* cantos arredondados */
+}
+ul {
+  width: 60% auto; /* largura máxima das listas */
+  margin: 20px auto; /* centraliza horizontalmente */
+  text-align: left; /* itens alinhados à esquerda */
+  line-height: 1.6em; /* espaço entre linhas */
+  padding: 15px; /* espaço interno */
+  border-radius: 10px; /* bordas arredondadas */
+  font-size: 1.2em; /* texto normal */
+}
+img {
+  width: 100%; /* ajusta à largura do container */
+  height: auto; /* mantém proporção */
+  border-radius: 10px; /* bordas arredondadas */
+}
+
+.imagem {
+  display: grid; /* usa layout em grade */
+  grid-template-columns: repeat(2, 1fr); /* duas colunas iguais */
+  gap: 20px; /* espaço entre imagens */
+  justify-items: center; /* centraliza imagens em cada coluna */
+  padding: 20px; /* espaço interno */
+  width: 80%; /* largura total da galeria */
+  margin: auto; /* centraliza na página */
+}
+/* ajusta as imagens dentro da galeria */
+.imagem img {
+  width: 100%; /* imagem ocupa toda a coluna */
+  height: auto; /* mantém proporção */
+  border-radius: 10px;
+  text-decoration: none; /* remove sublinhado */
+}
+.grid {
+  display: grid; /* ativa grid */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* número de colunas se ajusta */
+  gap: 20px; /* espaço entre elementos */
+  margin-top: 20px; /* separa do topo */
+  text-align: center; /* centraliza texto */
+  width: 90%;
+  margin: auto;
+}
+.grid img {
+  width: 100%; /* ocupa toda a célula */
+  border-radius: 10px;
+}
+.video {
+  text-align: center; /* centraliza o iframe */
+  margin: 20px auto; /* espaçamento vertical */
+  width: 100%;
+}
+h3 {
+  text-align: center; /* centraliza subtítulos */
+}
+footer {
+  text-align: center; /* centraliza texto e links */
+  background-color: rgb(0, 0, 0); /* fundo escuro */
+  color: white; /* texto branco */
+  padding: 20px; /* espaço interno */
+}
+
+footer a {
+  color: white; /* cor dos links */
+  text-decoration: none; /* sem sublinhado */
+  margin: 0 10px; /* espaço entre links */
+}
+footer a:hover {
+  color: rgb(231, 23, 23); /* muda a cor ao passar o mouse */
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+
+  /* Título principal */
+  h1 {
+    font-size: 3.5em; /* aumenta o tamanho do título */
+    margin-top: 100px; /* adiciona espaço superior */
+    text-align: center; /* centraliza o texto */
+  }
+
+  /* Subtítulos */
+  h2 {
+    font-size: 2.5em; /* define tamanho menor que h1 */
+    text-align: center; /* centraliza o texto */
+  }
+
+  /* Parágrafos */
+  p {
+    padding-top: 2%; /* espaçamento superior */
+    padding-bottom: 2%; /* espaçamento inferior */
+    display: block;
+  }
+  nav {
+  text-align: center; /* centraliza os links */
+  padding: 10px; /* espaço interno */
+  font-size: 1.3em; /* aumenta fonte dos links */
+  word-spacing: 1rem; /* espaço entre links */
+  }
+}
+@media (max-width: 400px) {
+  img {
+    width: 90%;
+  }
+  #sobre img{
+    width: 110%;
+  }
+  #integrantes img{
+    width: 110%;
+
+  }
+  
+  }   
+@media (max-width: 100px){
+  #video{
+    width: 30px;
+    text-align: center;
+  }
+}
+h3{
+    font-size: 2em;
+}
+h1,h2,h3,h4,h5,h6{
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+p{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 1.2em; /* texto normal */
+}
+article{
+  color: #fafafa;
+}
